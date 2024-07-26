@@ -2,10 +2,6 @@ import { useState } from "react";
 import { sentenceBank, botPreMadeReply } from "../PreMadeReply/PreMadeReply";
 import OpenAI from "openai";
 
-const openai = new OpenAI({
-  apiKey: import.meta.env.VITE_CHATGPT_API_KEY,
-  dangerouslyAllowBrowser: true,
-});
 function Rightsidepanel({
   userIndex,
   listofUsers,
@@ -19,7 +15,13 @@ function Rightsidepanel({
   setIsSurveyStart,
   isChatGPT,
   setIsChatGPT,
+  chatgptApiKey,
 }) {
+  const openai = new OpenAI({
+    apiKey: chatgptApiKey,
+    dangerouslyAllowBrowser: true,
+  });
+
   const [newItem, setNewItem] = useState("");
   // const [isChatGPT, setIsChatGPT] = useState(false);
   const [isChatGPTTyping, setIsChatGPTTyping] = useState(false);

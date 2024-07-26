@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import "./App.css";
+import ChatgptApiKeySection from "./components/ChatgptApiKeySection/ChatgptApiKeySection";
 import Header from "./components/Header/Header";
 import Leftsidepanel from "./components/Leftsidepanel/Leftsidepanel";
 import Rightsidepanel from "./components/Rightsidepanel/Rightsidepanel";
@@ -1808,6 +1809,7 @@ function App() {
   const [isImport, setIsImport] = useState(false);
   const [isSurveyStart, setIsSurveyStart] = useState(false);
   const [isChatGPT, setIsChatGPT] = useState(false);
+  const [chatgptApiKey, setChatgptApiKey] = useState("");
 
   const botQuestion = [
     [
@@ -2328,6 +2330,10 @@ function App() {
 
   return (
     <div className="max-w-6xl mx-auto">
+      <ChatgptApiKeySection
+        chatgptApiKey={chatgptApiKey}
+        setChatgptApiKey={setChatgptApiKey}
+      />
       <Header
         listofUsers={listofUsers}
         createNewUser={createNewUser}
@@ -2365,6 +2371,7 @@ function App() {
           setIsSurveyStart={setIsSurveyStart}
           isChatGPT={isChatGPT}
           setIsChatGPT={setIsChatGPT}
+          chatgptApiKey={chatgptApiKey}
         />
       </div>
       <Reportsection
@@ -2372,6 +2379,7 @@ function App() {
         listofUsers={listofUsers}
         taxPaid={listofUsers[userIndex].taxPaid}
         isChatGPT={isChatGPT}
+        chatgptApiKey={chatgptApiKey}
       />
     </div>
   );

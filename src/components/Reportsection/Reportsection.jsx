@@ -1,12 +1,19 @@
 import { useState } from "react";
 import OpenAI from "openai";
 
-const openai = new OpenAI({
-  apiKey: import.meta.env.VITE_CHATGPT_API_KEY,
-  dangerouslyAllowBrowser: true,
-});
+function Reportsection({
+  userIndex,
+  listofUsers,
+  taxPaid,
+  isChatGPT,
+  chatgptApiKey,
+}) {
+  const openai = new OpenAI({
+    // apiKey: import.meta.env.VITE_CHATGPT_API_KEY,
+    apiKey: chatgptApiKey,
+    dangerouslyAllowBrowser: true,
+  });
 
-function Reportsection({ userIndex, listofUsers, taxPaid, isChatGPT }) {
   const [isGenerating, setIsGenerating] = useState(false);
   const [report, setReport] = useState("");
 
