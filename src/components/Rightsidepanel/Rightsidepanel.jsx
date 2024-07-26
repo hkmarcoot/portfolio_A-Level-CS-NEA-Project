@@ -81,12 +81,6 @@ function Rightsidepanel({
       } else if (listofUsers[userIndex].name === "New User") {
         addChatBotQuestion(botQuestion[0][0].question);
       } else {
-        // Known bugs: It will keep asking the same Advisor question to other user
-        // if switching user while is still in pre-made reply mode.
-        // This happens because the isSurveyStart state is not updated yet,
-        // and hence getting the old stage and count value into the botQuestion.
-        // However, this bugs will not affect the calculation of tax.
-        // It will only affect the user experience.
         addChatBotQuestion(botQuestion[stage][count].question);
       }
       // Check if whether isSurveyStart is true before change it to false
