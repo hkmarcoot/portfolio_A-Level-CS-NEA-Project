@@ -1,0 +1,117 @@
+#root {
+  /* max-width: 1280px; */
+  /* margin: 0 auto; */
+  /* padding: 2rem; */
+  text-align: center;
+}
+
+/* #dialogue-section {
+  scrollbar-width: thin;
+  scrollbar-color: var(--light-blue) var(--arrow-blue);
+} */
+
+.message {
+  color: #000;
+  clear: both;
+  /* line-height: 1.2vw; */
+  /* font-size: 1.2vw; */
+  padding: 8px;
+  position: relative;
+  margin: 8px 0;
+  max-width: 80%;
+  word-wrap: break-word;
+  z-index: 1;
+}
+
+#chatbot {
+  position: relative;
+  bottom: 0;
+  /* min-height: 1.5vw; */
+  min-height: 24px;
+  border: 0.15vw solid #258bd0;
+  background-color: #fff;
+  border-radius: 1vw 1vw 1vw 1vw;
+  /* padding: 1vw; */
+  padding: 8px;
+  /* margin: 1.5vw 0; */
+  margin: 8px 0;
+}
+
+#appuser {
+  position: relative;
+  bottom: 0;
+  min-height: 1.5vw;
+  color: #fff;
+  padding: 1vw;
+  margin: 1.5vw 0;
+  /* border: 3px solid #99c9ea; */
+  border-radius: 1vw 1vw 1vw 1vw;
+  background: linear-gradient(45deg, red, blue);
+  float: right;
+  font-weight: 800;
+}
+
+.window-modal {
+  display: block; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 3; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 1); /* Fallback color*/
+}
+
+.create-user-card,
+.import-user-card {
+  background-color: rgba(239, 172, 49, 0.868);
+  margin: 50px auto;
+  border: 1px solid #ddd;
+  padding: 16px;
+  /* margin: 16px; */
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 80%;
+}
+
+#user-card {
+  position: relative;
+  /* display: block; */
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
