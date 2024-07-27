@@ -242,7 +242,7 @@ Justification of Level 1L:
 
 ## Algorithms
 
-## - Binary Search For a Reply In Pre-made Reply Mode
+## Binary Search For a Reply In Pre-made Reply Mode
 
 The flowchart can be found in Level 1A (Get The Pre-made Reply) in data flow diagram.
 
@@ -270,7 +270,7 @@ Justification:
 
 - The binary search function will check if the start index is greater than the end index at the beginning of the function. If it is true, it will end the search by returning a string “Not found from sentence bank”. If the start index is not greater than the end index, the search will continue and calculate the middleIndex number, which is the floor number of the start index plus the end index divided by two. Then, it will compare whether the string from the array with this middleIndex matches the text string. If it is true, then it will return this middleIndex. If it is false, it will continue the code block. An if statement will check whether the sentence at middleIndex is alphabetically greater than the text. If it is true, it will search in the upper half of the middle index by running the findFromSentenceBank function again recursively but change the end index to middleIndex minus 1. If it is false, which means the sentence at middleIndex is alphabetically less than the text, it will search in the lower half of middle index by recursively running the findFromSentenceBank function again but change the start index to middleIndex plus 1.
 
-## - How The Tax Should Be Calculated
+## How The Tax Should Be Calculated
 
 <img src="./src/img/pic20_taxCalLogic.png" />
 
@@ -305,11 +305,11 @@ This test case can be transformed into a diagram:
 
 - Among the 16 cases, the difficulties are how the different allowances and starting rates for savings are calculated to reduce the tax, whereas the non-savings income, interest and dividend are spread differently, occupying more than one tax band.
 
-## - How The Application Responds to The User in Advisor Chat Mode
+## How The Application Responds to The User in Advisor Chat Mode
 
 - The flowchart can be found in Level 1C (Start Advisor Chat) in data flow diagram. The justification of this algorithm showing how the output(String) procedure and the findNextQuestionAndAsk(int, String) procedure collaborate can also be found in the justification in Level 1C (Start Advisor Chat) in data flow diagram.
 
-## - Check whether the user is a UK resident (Part of the How The Application Responds to The User in Advisor Chat Mode)
+## Check whether the user is a UK resident (Part of the How The Application Responds to The User in Advisor Chat Mode)
 
 Here is a flowchart of the survey to test whether the user is a UK resident:
 
