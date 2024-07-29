@@ -4,6 +4,8 @@
 
 \*Usability Features, Justification of Class, Attributes and Methods, Subroutines and States are not included in the DESIGN section.
 
+Click <a href="https://marco-cs-portfolio.netlify.app/">here</a> for the project demo link.
+
 # DESIGN
 
 - [Decomposing My Problem](#decomposing-my-problem)
